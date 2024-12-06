@@ -1,15 +1,13 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import MyLayout from "./components/layout/MyLayout";
-import MyHeader from "./components/header/MyHeader";
+
+import MyHeader from "@components/header/MyHeader";
+import AdminDashboard from "@pages/admin/AdminDashboard";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <div>
+    <div className="flex-col flex">
       <MyHeader />
+      <AdminDashboard />
     </div>
   );
 }

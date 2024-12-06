@@ -2,7 +2,7 @@ import React from "react";
 
 const FlyoutContent = ({ items }) => {
   return (
-    <div className="absolute top-full mt-2 w-max bg-white shadow-md rounded-md">
+    <div className="absolute top-full mt-3 w-max bg-white shadow-md rounded-md">
       {items && items.length > 0 ? (
         <ul className="flex flex-col p-2">
           {items.map((item, index) => (

@@ -10,8 +10,8 @@ const AvatarDropDown = () => {
   // Đóng dropdown khi click ra ngoài
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-        setOpen(false);
+      if (dropDownRef.current && !dropDownRef.current.contains(event.target)) {
+        setOpen(open);
       }
     };
     document.addEventListener("mousedown", handleClickOutside);
@@ -31,7 +31,7 @@ const AvatarDropDown = () => {
 
       {/* Nội dung của dropdown khi ấn vào avatar user */}
       {open && (
-        <div className="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg z-50 origin-left">
+        <div className="absolute right-0 mt-3 w-40 bg-[#EBECF0] border border-gray-200 rounded-md shadow-lg z-50 origin-left translate-x-1/4">
           <div>
             {/* Tên, chức vụ, trạng thái hoạt động(đang hoạt động, chờ, không làm phiền) người dùng */}
           </div>
@@ -39,7 +39,7 @@ const AvatarDropDown = () => {
             {dataItems.map((items) => (
               <li
                 key={items.id}
-                className="flex items-center px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                className="flex items-center px-4 py-2 hover:bg-white cursor-pointer"
               >
                 <IconCustom src={items.icon} />
                 <span className="ml-3 text-sm text-gray-700">
@@ -53,13 +53,5 @@ const AvatarDropDown = () => {
     </div>
   );
 };
-
-function DropdownItems(props) {
-  return (
-    <li>
-      <a>{props.text}</a>
-    </li>
-  );
-}
 
 export default AvatarDropDown;

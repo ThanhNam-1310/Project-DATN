@@ -42,7 +42,7 @@ const Flyout = ({ children, href }) => {
         {children}
         <span
           style={{
-            transform: hover ? "scaleX(1)" : "scaleX(0)",
+            transform: hover || isOpen ? "scaleX(1)" : "scaleX(0)",
           }}
           className="absolute -bottom-2 -left-2 -right-2 h-1 
           origin-left bg-white transition-transform 
