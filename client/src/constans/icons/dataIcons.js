@@ -7,6 +7,9 @@ import dropDownIcon from '@icons/dropDownIcon.svg';
 import dashboardIcon from '@icons/dashboardIcon.svg';
 import employeeIcon from '@icons/employeeIcon.svg';
 import settingDashboard from '@icons/settingDashboard.svg';
+import navCloseIcon from '@icons/navCloseIcon.svg';
+import taskIcon from '@icons/taskIcon.svg';
+import projectIcon from '@icons/projectIcon.svg';
 
 const dataIcons = {
     envlope: envlopeIcon,
@@ -18,6 +21,9 @@ const dataIcons = {
     dashboard: dashboardIcon,
     employee: employeeIcon,
     dashboardSetting: settingDashboard,
+    navClose: navCloseIcon,
+    tasks: taskIcon,
+    projects: projectIcon,
 }
 
 export default dataIcons;
