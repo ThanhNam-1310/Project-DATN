@@ -10,6 +10,10 @@ import settingDashboard from '@icons/settingDashboard.svg';
 import navCloseIcon from '@icons/navCloseIcon.svg';
 import taskIcon from '@icons/taskIcon.svg';
 import projectIcon from '@icons/projectIcon.svg';
+import profileIcon from '@icons/profileIcon.svg';
+import lockIcon from '@icons/lockIcon.svg';
+import eyeIcon from '@icons/eyeIcon.svg';
+import eyeSlashIcon from '@icons/eyeSlashIcon.svg';
 
 const dataIcons = {
     envlope: envlopeIcon,
@@ -24,6 +28,10 @@ const dataIcons = {
     navClose: navCloseIcon,
     tasks: taskIcon,
     projects: projectIcon,
+    profile: profileIcon,
+    lock: lockIcon,
+    eye: eyeIcon,
+    eyeSlash: eyeSlashIcon,
 }
 
 export default dataIcons;
