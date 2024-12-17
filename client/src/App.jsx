@@ -5,7 +5,8 @@ import { BrowserRouter, Routes, Route } from "react-router";
 import AdminDashboard from "@pages/admin/AdminDashboard.jsx";
 import EmployeeDashboard from "@pages/employee/EmployeeDashboard.jsx";
 import Login from "@pages/auth/login/Login.jsx";
-import Register from "@pages/auth/register/Register.jsx";
+import ResetPassword from "@pages/auth/reset_password/ResetPassword.jsx";
+import RegisterAccount from "@pages/auth/register/RegisterAccount";
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
           <Route path="/admin" element={<AdminDashboard />} />
           <Route path="/employee" element={<EmployeeDashboard />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
+          <Route path="/register" element={<RegisterAccount />} />
+          <Route path="/resetPass" element={<ResetPassword />} />
         </Routes>
       </BrowserRouter>
     </div>
